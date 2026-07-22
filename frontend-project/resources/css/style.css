@@ -4,13 +4,15 @@
     box-sizing: border-box ;
 }
  
-html{
+html,
+body{
     background-color: #ffffff;
     color:#555;
     font-family: Lato, sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .row{
@@ -45,7 +47,7 @@ h1{
     word-spacing: 3px;
 }
 
-#hero-text-box{
+.hero-text-box{
     position: absolute;
     width: 1140px;
     top: 50%;
@@ -447,4 +449,55 @@ footer{
     padding: 50px;
 }
 
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right; 
+}
 
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover{
+    color: #ddd;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+.fb:hover{
+    color: #3b5998;
+}
+.google:hover{
+    color: #dd4b39;
+}
+.twitter:hover{
+    color: #00aced;
+}
+.insta:hover{
+    color: #517fa4;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
